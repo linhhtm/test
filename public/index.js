@@ -28,6 +28,7 @@ var password = "";
     await setTimeout(async function () {
       //Thông báo tin nhắn đã gửi ra console
       await console.log("Đã chửi :'" + data + "'");
+      console.log("df");
       await page.type("#composerInput", data);
       await page.click("button[value='Gửi']");
     }, index * 1000);
